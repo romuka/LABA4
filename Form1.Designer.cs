@@ -29,20 +29,21 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.MessageBox = new System.Windows.Forms.GroupBox();
+            this.ResultBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.PriceBox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.RAMbox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.HDDBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.GpuBox = new System.Windows.Forms.TextBox();
+            this.Frequency = new System.Windows.Forms.Label();
+            this.FreqBox = new System.Windows.Forms.TextBox();
+            this.ModelBox = new System.Windows.Forms.TextBox();
+            this.Model = new System.Windows.Forms.Label();
+            this.MessageBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -53,118 +54,39 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "добавить";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // groupBox1
+            // MessageBox
             // 
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 34);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(712, 335);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Информейшн";
+            this.MessageBox.Controls.Add(this.ResultBox);
+            this.MessageBox.Controls.Add(this.label6);
+            this.MessageBox.Controls.Add(this.PriceBox);
+            this.MessageBox.Controls.Add(this.label5);
+            this.MessageBox.Controls.Add(this.RAMbox);
+            this.MessageBox.Controls.Add(this.label4);
+            this.MessageBox.Controls.Add(this.HDDBox);
+            this.MessageBox.Controls.Add(this.label3);
+            this.MessageBox.Controls.Add(this.GpuBox);
+            this.MessageBox.Controls.Add(this.Frequency);
+            this.MessageBox.Controls.Add(this.FreqBox);
+            this.MessageBox.Controls.Add(this.ModelBox);
+            this.MessageBox.Controls.Add(this.Model);
+            this.MessageBox.Controls.Add(this.button1);
+            this.MessageBox.Location = new System.Drawing.Point(12, 34);
+            this.MessageBox.Name = "MessageBox";
+            this.MessageBox.Size = new System.Drawing.Size(712, 335);
+            this.MessageBox.TabIndex = 1;
+            this.MessageBox.TabStop = false;
+            this.MessageBox.Text = "Информейшн";
+            this.MessageBox.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // label1
+            // ResultBox
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Model";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(80, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(80, 86);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 89);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Frequency";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(80, 131);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 134);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "GPU Brand";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(80, 178);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 7;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 178);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "HDD capacity";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(80, 220);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 9;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 223);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "RAM";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(80, 269);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 11;
+            this.ResultBox.Location = new System.Drawing.Point(234, 37);
+            this.ResultBox.Multiline = true;
+            this.ResultBox.Name = "ResultBox";
+            this.ResultBox.Size = new System.Drawing.Size(445, 252);
+            this.ResultBox.TabIndex = 13;
             // 
             // label6
             // 
@@ -175,17 +97,106 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Price";
             // 
+            // PriceBox
+            // 
+            this.PriceBox.Location = new System.Drawing.Point(80, 269);
+            this.PriceBox.Name = "PriceBox";
+            this.PriceBox.Size = new System.Drawing.Size(100, 20);
+            this.PriceBox.TabIndex = 11;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 223);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(74, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "RAM capacity";
+            // 
+            // RAMbox
+            // 
+            this.RAMbox.Location = new System.Drawing.Point(80, 220);
+            this.RAMbox.Name = "RAMbox";
+            this.RAMbox.Size = new System.Drawing.Size(100, 20);
+            this.RAMbox.TabIndex = 9;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 178);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(74, 13);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "HDD capacity";
+            // 
+            // HDDBox
+            // 
+            this.HDDBox.Location = new System.Drawing.Point(80, 178);
+            this.HDDBox.Name = "HDDBox";
+            this.HDDBox.Size = new System.Drawing.Size(100, 20);
+            this.HDDBox.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 134);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(61, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "GPU Brand";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // GpuBox
+            // 
+            this.GpuBox.Location = new System.Drawing.Point(80, 131);
+            this.GpuBox.Name = "GpuBox";
+            this.GpuBox.Size = new System.Drawing.Size(100, 20);
+            this.GpuBox.TabIndex = 5;
+            // 
+            // Frequency
+            // 
+            this.Frequency.AutoSize = true;
+            this.Frequency.Location = new System.Drawing.Point(6, 89);
+            this.Frequency.Name = "Frequency";
+            this.Frequency.Size = new System.Drawing.Size(57, 13);
+            this.Frequency.TabIndex = 4;
+            this.Frequency.Text = "Frequency";
+            // 
+            // FreqBox
+            // 
+            this.FreqBox.Location = new System.Drawing.Point(80, 86);
+            this.FreqBox.Name = "FreqBox";
+            this.FreqBox.Size = new System.Drawing.Size(100, 20);
+            this.FreqBox.TabIndex = 3;
+            // 
+            // ModelBox
+            // 
+            this.ModelBox.Location = new System.Drawing.Point(80, 37);
+            this.ModelBox.Name = "ModelBox";
+            this.ModelBox.Size = new System.Drawing.Size(100, 20);
+            this.ModelBox.TabIndex = 2;
+            this.ModelBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // Model
+            // 
+            this.Model.AutoSize = true;
+            this.Model.Location = new System.Drawing.Point(6, 37);
+            this.Model.Name = "Model";
+            this.Model.Size = new System.Drawing.Size(36, 13);
+            this.Model.TabIndex = 1;
+            this.Model.Text = "Model";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.MessageBox);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.MessageBox.ResumeLayout(false);
+            this.MessageBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -193,19 +204,20 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox MessageBox;
+        private System.Windows.Forms.Label Model;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox GpuBox;
+        private System.Windows.Forms.Label Frequency;
+        private System.Windows.Forms.TextBox FreqBox;
+        private System.Windows.Forms.TextBox ModelBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox HDDBox;
+        private System.Windows.Forms.TextBox RAMbox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox PriceBox;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox ResultBox;
     }
 }
 

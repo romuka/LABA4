@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace LABA_4OTIRE
 {
@@ -22,17 +24,32 @@ namespace LABA_4OTIRE
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Komputar new_komputar;
+            if (ModelBox.Text != "" && FreqBox.Text != "" && GpuBox.Text != "" && HDDBox.Text != "" && RAMbox.Text != "" && PriceBox.Text != "")
+            {
+                new_komputar = new Komputar(ModelBox.Text, Convert.ToInt32(FreqBox.Text), GpuBox.Text, Convert.ToInt32(HDDBox.Text), Convert.ToInt32(RAMbox.Text), Convert.ToInt32(PriceBox.Text));
+                ResultBox.Text += new_komputar.GetInformation();
+            }
+            
+
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
